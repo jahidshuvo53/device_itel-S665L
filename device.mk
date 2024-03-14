@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/itel/itel-S665L
+LOCAL_PATH := device/itel/itel_S665L
 
 # Virtual A/B
 ENABLE_VIRTUAL_AB := true
