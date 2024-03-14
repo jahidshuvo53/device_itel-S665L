@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_itel_S665L.mk
+    $(LOCAL_DIR)/twrp_itel-S665L.mk
