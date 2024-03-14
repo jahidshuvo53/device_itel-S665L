@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1612
 TARGET_SCREEN_WIDTH := 720
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
+
 
 PRODUCT_PACKAGES += \
     bootctrl.ums9230
