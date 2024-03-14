@@ -15,8 +15,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from itel-S665L device
 $(call inherit-product, device/itel/itel-S665L/device.mk)
 
-PRODUCT_DEVICE := itel-S665L
-PRODUCT_NAME := twrp_itel-S665L
+PRODUCT_DEVICE := itel_S665L
+PRODUCT_NAME := twrp_itel_S665L
 PRODUCT_BRAND := Itel
 PRODUCT_MODEL := itel S665L
 PRODUCT_MANUFACTURER := itel
