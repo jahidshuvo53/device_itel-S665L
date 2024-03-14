@@ -6,6 +6,16 @@
 #
 
 LOCAL_PATH := device/itel/itel-S665L
+
+# Virtual A/B
+ENABLE_VIRTUAL_AB := true
+
+# AB
+AB_OTA_UPDATER := true
+
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -18,14 +28,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
 
+# Display
+TARGET_SCREEN_HEIGHT := 1612
+TARGET_SCREEN_WIDTH := 720
+
+
 PRODUCT_PACKAGES += \
     bootctrl.ums9230
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.ums9230 \
-    libgptutils \
-    libz \
-    libcutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
