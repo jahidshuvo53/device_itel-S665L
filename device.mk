@@ -25,7 +25,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-impl-1.2 \
     android.hardware.boot@1.0-service
 
 # Display
@@ -35,7 +35,12 @@ TARGET_SCREEN_WIDTH := 720
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
-    android.hardware.fastboot@1.0-impl-mock
+    android.hardware.fastboot@1.1-impl-mock
+
+# Health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl-default \
+    android.hardware.health@2.0-service
 
 
 PRODUCT_PACKAGES += \
