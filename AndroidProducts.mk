@@ -7,8 +7,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_itel-S665L.mk
-
-COMMON_LUNCH_CHOICES := \
-    twrp_itel-S665L-user \
-    twrp_itel-S665L-userdebug \
-    twrp_itel-S665L-eng
