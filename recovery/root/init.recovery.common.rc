@@ -18,6 +18,14 @@ service modem_ctl-ft /vendor/bin/modem_control
     group system radio shell
     oneshot
 
+service snapuserd /system/bin/snapuserd
+    socket snapuserd stream 0660 system system
+    oneshot
+    disabled
+    user root
+    group root system
+    seclabel u:r:snapuserd:s0
+
 service logd-cali /system/bin/logd
     class cali
     socket logd stream 0666 logd logd
